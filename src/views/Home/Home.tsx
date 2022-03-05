@@ -25,8 +25,8 @@ const Hero = styled.div`
   ${({ theme }) => theme.mediaQueries.lg} {
     background-image: url('/images/egg/3b.png');
     background-position: center;
-    height: auto;
-    max-width: 100%;
+    height: 100px;
+    max-width: 80%;
     padding-top: 0;
   }
 `
