@@ -29,27 +29,27 @@ const StyledFooter = styled.div<{ isFinished: boolean }>`
   padding: 24px;
 `
 
-const StyledDetailsButton = styled.button`
-  align-items: center;
-  background-color: transparent;
-  border: 0;
-  color: ${(props) => props.theme.colors.primary};
-  cursor: pointer;
-  display: inline-flex;
-  font-size: 16px;
-  font-weight: 600;
-  height: 32px;
-  justify-content: center;
-  outline: 0;
-  padding: 0;
-  &:hover {
-    opacity: 0.9;
-  }
-
-  & > svg {
-    margin-left: 4px;
-  }
-`
+//const StyledDetailsButton = styled.button`
+//  align-items: center;
+//  background-color: transparent;
+//  border: 0;
+ // color: ${(props) => props.theme.colors.primary};
+ // cursor: pointer;
+ // display: inline-flex;
+ // font-size: 16px;
+//  font-weight: 600;
+ // height: 32px;
+ // justify-content: center;
+//  outline: 0;
+ // padding: 0;
+ // &:hover {
+ //   opacity: 0.9;
+ // }
+//
+ // & > svg {
+  //  margin-left: 4px;
+ // }
+//`
 
 const Details = styled.div`
   margin-top: 24px;
