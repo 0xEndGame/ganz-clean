@@ -5,14 +5,14 @@ const farms: FarmConfig[] = [
   {
     pid: 0,
     risk: 5,
-    lpSymbol: 'COAL-USDT',
+    lpSymbol: 'WAIFU-USDT',
     lpAddresses: {
       250: '0x69f51BD5e2BFAd9d353858958664263D9ab48d8D',
       97: '',
     },
-    tokenSymbol: 'COAL',
+    tokenSymbol: 'WAIFU',
     tokenAddresses: {
-      250: '0x9373da7861c2d71062c68de3b503c63d3995283f',
+      250: '0x8572Ff92497E5ca5E16A52574E37Cd9Af3460d0b',
       97: '',
     },
     quoteTokenSymbol: QuoteToken.USDT,
@@ -21,14 +21,14 @@ const farms: FarmConfig[] = [
   {
     pid: 1,
     risk: 5,
-    lpSymbol: 'COAL-WFTM',
+    lpSymbol: 'WAIFU-WFTM',
     lpAddresses: {
-      250: '0xE3F716070Bec6b4f07118f975Db3b15c0F8d41DE',
+      250: '0xE6B9BB0E678f587c8B4b82B681C0B0b32e5c9F3A',
       97: '',
     },
-    tokenSymbol: 'COAL',
+    tokenSymbol: 'WAIFU',
     tokenAddresses: {
-      250: '0x9373da7861c2d71062c68de3b503c63d3995283f',
+      250: '0x8572Ff92497E5ca5E16A52574E37Cd9Af3460d0b',
       97: '',
     },
     quoteTokenSymbol: QuoteToken.WFTM,
@@ -135,14 +135,14 @@ const farms: FarmConfig[] = [
     pid: 8,
     risk: 5,
     isTokenOnly: true,
-    lpSymbol: 'COAL',
+    lpSymbol: 'WAIFU',
     lpAddresses: {
       250: '0x69f51bd5e2bfad9d353858958664263d9ab48d8d',
       97: '', // COAL-USDT LP
     },
-    tokenSymbol: 'COAL',
+    tokenSymbol: 'WAIFU',
     tokenAddresses: {
-      250: '0x9373da7861C2D71062C68DE3b503C63D3995283F',
+      250: '0x8572Ff92497E5ca5E16A52574E37Cd9Af3460d0b',
       97: '',
     },
     quoteTokenSymbol: QuoteToken.USDT,
