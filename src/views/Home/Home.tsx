@@ -26,7 +26,7 @@ const Hero = styled.div`
     background-image: url('/images/egg/3b.png');
     background-position: center;
     height: auto;
-    max-width: 150%;
+    max-width: 200px;
     padding-top: 0;
   }
 `
