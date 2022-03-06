@@ -27,10 +27,10 @@ const CakeStats = () => {
   const totalSupply = useTotalSupply()
   const burnedBalance = useBurnedBalance(getCakeAddress())
   const farms = useFarms();
-  const eggPrice = usePriceCakeBusd();
+  const waifuPrice = usePriceCakeBusd();
   const circSupply = totalSupply ? totalSupply.minus(burnedBalance) : new BigNumber(0);
   const cakeSupply = getBalanceNumber(circSupply);
-  const marketCap = eggPrice.times(circSupply);
+  const marketCap = waifuPrice.times(circSupply);
 
   let waifuPerBlock = 0;
   if(farms && farms[0] && farms[0].waifuPerBlock){
