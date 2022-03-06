@@ -64,7 +64,7 @@ const NftCard: React.FC<NftCardProps> = ({ nft }) => {
     canClaim,
     hasClaimed,
     canBurnNft,
-    totalSupplyDistributed,
+   // totalSupplyDistributed,
     currentDistributedSupply,
     getTokenIds,
     reInitialize,
@@ -72,7 +72,7 @@ const NftCard: React.FC<NftCardProps> = ({ nft }) => {
   const walletCanClaim = canClaim && !hasClaimed
   const { bunnyId, name, previewImage, originalImage, description } = nft
   const tokenIds = getTokenIds(bunnyId)
-  const isSupplyAvailable = currentDistributedSupply < totalSupplyDistributed
+ // const isSupplyAvailable = currentDistributedSupply < totalSupplyDistributed
   const walletOwnsNft = tokenIds && tokenIds.length > 0
   const Icon = state.isOpen ? ChevronUpIcon : ChevronDownIcon
 
