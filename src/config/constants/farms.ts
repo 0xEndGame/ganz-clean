@@ -33,6 +33,38 @@ const farms: FarmConfig[] = [
     },
     quoteTokenSymbol: QuoteToken.WFTM,
     quoteTokenAdresses: contracts.wftm,
+  },
+  {
+    pid: 2,
+    risk: 1,
+    lpSymbol: 'WFTM-USDC',
+    lpAddresses: {
+      250: '0x2b4c76d0dc16be1c31d4c1dc53bf9b45987fc75c',
+      97: '',
+    },
+    tokenSymbol: 'WFTM',
+    tokenAddresses: {
+      250: '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83',
+      97: '',
+    },
+    quoteTokenSymbol: QuoteToken.USDC,
+    quoteTokenAdresses: contracts.usdc,
+  },
+  {
+    pid: 3,
+    risk: 3,
+    lpSymbol: 'WFTM-USDT',
+    lpAddresses: {
+      250: '0x5965e53aa80a0bcf1cd6dbdd72e6a9b2aa047410',
+      97: '',
+    },
+    tokenSymbol: 'WFTM',
+    tokenAddresses: {
+      250: '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83',
+      97: '',
+    },
+    quoteTokenSymbol: QuoteToken.USDT,
+    quoteTokenAdresses: contracts.usdt,
   }
 ]
 
