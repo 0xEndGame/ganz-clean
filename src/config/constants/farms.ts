@@ -123,14 +123,31 @@ const farms: FarmConfig[] = [
       250: '0xE80792d7c9C39fc8456ECE4294E990371756c4dC',
       97: '', // COAL-USDT LP
     },
-    tokenSymbol: 'COAL',
+    tokenSymbol: 'WAIFU',
     tokenAddresses: {
       250: '0xDBCB8249a5CF2B2CA9C241F76B14E44B7e5AeaD8',
       97: '',
     },
     quoteTokenSymbol: QuoteToken.USDT,
     quoteTokenAdresses: contracts.usdt,
-  }
+  },
+  {
+    pid: 10,
+    risk: 3,
+    isTokenOnly: true,
+    lpSymbol: 'USDC',
+    lpAddresses: {
+      250: '0x2b4c76d0dc16be1c31d4c1dc53bf9b45987fc75c',
+      97: '', // FTM-USDC
+    },
+    tokenSymbol: 'USDC',
+    tokenAddresses: {
+      250: '0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
+      97: '',
+    },
+    quoteTokenSymbol: QuoteToken.WFTM,
+    quoteTokenAdresses: contracts.wftm,
+  },
 ]
 
 export default farms
