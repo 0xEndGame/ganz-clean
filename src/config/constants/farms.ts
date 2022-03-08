@@ -5,7 +5,7 @@ const farms: FarmConfig[] = [
   {
     pid: 0,
     risk: 5,
-    lpSymbol: 'WAIFU-USDT',
+    lpSymbol: 'WAIFU-fUSDT',
     lpAddresses: {
       250: '0xE80792d7c9C39fc8456ECE4294E990371756c4dC',
       97: '',

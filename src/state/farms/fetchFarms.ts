@@ -47,34 +47,39 @@ const fetchFarms = async () => {
           name: 'decimals',
         },
       ]
-
+    
       const [
         tokenBalanceLP,
         quoteTokenBlanceLP,
         lpTokenBalanceMC,
         lpTotalSupply,
         tokenDecimals,
-        quoteTokenDecimals
+        quoteTokenDecimals,
       ] = await multicall(erc20, calls)
+      console.log(farmConfig)
 
-      let tokenAmount;
-      let lpTotalInQuoteToken;
-      let tokenPriceVsQuote;
-      if(farmConfig.isTokenOnly){
-        tokenAmount = new BigNumber(lpTokenBalanceMC).div(new BigNumber(10).pow(tokenDecimals));
-        if(farmConfig.tokenSymbol === QuoteToken.BUSD && farmConfig.quoteTokenSymbol === QuoteToken.BUSD){
-          tokenPriceVsQuote = new BigNumber(1);
-        }else{
-          tokenPriceVsQuote = new BigNumber(quoteTokenBlanceLP).div(new BigNumber(tokenBalanceLP));
+      let tokenAmount
+      let lpTotalInQuoteToken
+      let tokenPriceVsQuote
+      if (farmConfig.isTokenOnly) {
+        tokenAmount = new BigNumber(lpTokenBalanceMC).div(new BigNumber(10).pow(tokenDecimals))
+        if (farmConfig.tokenSymbol === QuoteToken.USDT && farmConfig.quoteTokenSymbol === QuoteToken.USDT) {
+          tokenPriceVsQuote = new BigNumber(1)
+        } else {
+          const quoteTokenBalanceRevised = new BigNumber(quoteTokenBlanceLP).div(
+            new BigNumber(10).pow(quoteTokenDecimals),
+          )
+          const tokenBalanceRevised = new BigNumber(tokenBalanceLP).div(new BigNumber(10).pow(tokenDecimals))
+          tokenPriceVsQuote = new BigNumber(quoteTokenBalanceRevised).div(new BigNumber(tokenBalanceRevised))
         }
-        lpTotalInQuoteToken = tokenAmount.times(tokenPriceVsQuote);
-      }else{
+        lpTotalInQuoteToken = tokenAmount.times(tokenPriceVsQuote)
+      } else {
         // Ratio in % a LP tokens that are in staking, vs the total number in circulation
         const lpTokenRatio = new BigNumber(lpTokenBalanceMC).div(new BigNumber(lpTotalSupply))
 
         // Total value in staking in quote token value
         lpTotalInQuoteToken = new BigNumber(quoteTokenBlanceLP)
-          .div(new BigNumber(10).pow(18))
+          .div(new BigNumber(10).pow(quoteTokenDecimals))
           .times(new BigNumber(2))
           .times(lpTokenRatio)
 
@@ -84,14 +89,18 @@ const fetchFarms = async () => {
           .div(new BigNumber(10).pow(quoteTokenDecimals))
           .times(lpTokenRatio)
 
-        if(tokenAmount.comparedTo(0) > 0){
-          tokenPriceVsQuote = quoteTokenAmount.div(tokenAmount);
-        }else{
-          tokenPriceVsQuote = new BigNumber(quoteTokenBlanceLP).div(new BigNumber(tokenBalanceLP));
+        if (tokenAmount.comparedTo(0) > 0) {
+          tokenPriceVsQuote = quoteTokenAmount.div(tokenAmount)
+        } else {
+          const quoteTokenBalanceRevised = new BigNumber(quoteTokenBlanceLP).div(
+            new BigNumber(10).pow(quoteTokenDecimals),
+          )
+          const tokenBalanceRevised = new BigNumber(tokenBalanceLP).div(new BigNumber(10).pow(tokenDecimals))
+          tokenPriceVsQuote = new BigNumber(quoteTokenBalanceRevised).div(new BigNumber(tokenBalanceRevised))
         }
       }
 
-      const [info, totalAllocPoint, waifuPerBlock] = await multicall(masterchefABI, [
+      const [info, totalAllocPoint, eggPerBlock] = await multicall(masterchefABI, [
         {
           address: getMasterChefAddress(),
           name: 'poolInfo',
@@ -103,7 +112,7 @@ const fetchFarms = async () => {
         },
         {
           address: getMasterChefAddress(),
-          name: 'waifuPerBlock',
+          name: 'coalPerSecond',
         },
       ])
 
@@ -119,7 +128,7 @@ const fetchFarms = async () => {
         poolWeight: poolWeight.toNumber(),
         multiplier: `${allocPoint.div(100).toString()}X`,
         depositFeeBP: info.depositFeeBP,
-        waifuPerBlock: new BigNumber(waifuPerBlock).toNumber(),
+        eggPerBlock: new BigNumber(eggPerBlock).toNumber(),
       }
     }),
   )
