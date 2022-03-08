@@ -112,7 +112,7 @@ const fetchFarms = async () => {
         },
         {
           address: getMasterChefAddress(),
-          name: 'coalPerSecond',
+          name: 'waifuPerBlock',
         },
       ])
 
