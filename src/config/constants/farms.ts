@@ -135,12 +135,12 @@ const farms: FarmConfig[] = [
     pid: 8,
     risk: 3,
     isTokenOnly: true,
-    lpSymbol: 'USDC',
+    lpSymbol: 'usdc',
     lpAddresses: {
       250: '0x2b4c76d0dc16be1c31d4c1dc53bf9b45987fc75c',
       97: '', // FTM-USDC
     },
-    tokenSymbol: 'USDC',
+    tokenSymbol: 'usdc',
     tokenAddresses: {
       250: '0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
       97: '',
