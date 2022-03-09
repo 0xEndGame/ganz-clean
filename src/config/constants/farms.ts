@@ -157,9 +157,43 @@ const farms: FarmConfig[] = [
       250: '0x549d44C9C76EdE84D4022554552470B83C097AfF',
       97: '', // FTM-USDC
     },
-    tokenSymbol: 'USDC',
+    tokenSymbol: 'FFF',
     tokenAddresses: {
       250: '0x63F601bD749314ad1A2DAD9fbd487488FfF70D6C',
+      97: '',
+    },
+    quoteTokenSymbol: QuoteToken.WFTM,
+    quoteTokenAdresses: contracts.wftm,
+  },
+  {
+    pid: 10,
+    risk: 1,
+    isTokenOnly: true,
+    lpSymbol: 'WFTM',
+    lpAddresses: {
+      250: '0x5965e53aa80a0bcf1cd6dbdd72e6a9b2aa047410',
+      97: '', // FTM-USDT
+    },
+    tokenSymbol: 'WFTM',
+    tokenAddresses: {
+      250: '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83',
+      97: '',
+    },
+    quoteTokenSymbol: QuoteToken.USDT,
+    quoteTokenAdresses: contracts.usdt,
+  },
+  {
+    pid: 11,
+    risk: 2,
+    isTokenOnly: true,
+    lpSymbol: 'WBTC',
+    lpAddresses: {
+      250: '0xfdb9ab8b9513ad9e419cf19530fee49d412c3ee3',
+      97: '', // FTM-WBTC LP
+    },
+    tokenSymbol: 'WBTC',
+    tokenAddresses: {
+      250: '0x321162Cd933E2Be498Cd2267a90534A804051b11',
       97: '',
     },
     quoteTokenSymbol: QuoteToken.WFTM,
