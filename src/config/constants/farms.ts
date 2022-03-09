@@ -12,7 +12,7 @@ const farms: FarmConfig[] = [
     },
     tokenSymbol: 'WAIFU',
     tokenAddresses: {
-      250: '0xDBCB8249a5CF2B2CA9C241F76B14E44B7e5AeaD8',
+      250: '0xa99a2A440494299476f4ceB1696433c66c0d7358',
       97: '',
     },
     quoteTokenSymbol: QuoteToken.USDT,
@@ -28,7 +28,7 @@ const farms: FarmConfig[] = [
     },
     tokenSymbol: 'WAIFU',
     tokenAddresses: {
-      250: '0xDBCB8249a5CF2B2CA9C241F76B14E44B7e5AeaD8',
+      250: '0xa99a2A440494299476f4ceB1696433c66c0d7358',
       97: '',
     },
     quoteTokenSymbol: QuoteToken.WFTM,
@@ -125,7 +125,7 @@ const farms: FarmConfig[] = [
     },
     tokenSymbol: 'WAIFU',
     tokenAddresses: {
-      250: '0xDBCB8249a5CF2B2CA9C241F76B14E44B7e5AeaD8',
+      250: '0xa99a2A440494299476f4ceB1696433c66c0d7358',
       97: '',
     },
     quoteTokenSymbol: QuoteToken.USDT,
@@ -143,6 +143,23 @@ const farms: FarmConfig[] = [
     tokenSymbol: 'USDC',
     tokenAddresses: {
       250: '0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
+      97: '',
+    },
+    quoteTokenSymbol: QuoteToken.WFTM,
+    quoteTokenAdresses: contracts.wftm,
+  },
+  {
+    pid: 9,
+    risk: 3,
+    isTokenOnly: true,
+    lpSymbol: 'FFF',
+    lpAddresses: {
+      250: '0x549d44C9C76EdE84D4022554552470B83C097AfF',
+      97: '', // FTM-USDC
+    },
+    tokenSymbol: 'USDC',
+    tokenAddresses: {
+      250: '0x63F601bD749314ad1A2DAD9fbd487488FfF70D6C',
       97: '',
     },
     quoteTokenSymbol: QuoteToken.WFTM,
