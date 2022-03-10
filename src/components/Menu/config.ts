@@ -12,11 +12,11 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Exchange',
-        href: 'https://spookyswap.com/',
+        href: 'https://spookyswap.finance/',
       },
       {
         label: 'Liquidity',
-        href: 'spookyswap.com',
+        href: 'https://spookyswap.finance/',
       },
     ],
   },
@@ -51,7 +51,7 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'PreSale',
-        href: '#',
+        href: 'https://dx.app/app/v3/defipresale?saleID=23&chain=Fantom',
       },
       {
         label: 'Play 2 Earn coming soon',
@@ -73,7 +73,7 @@ const config: MenuEntry[] = [
       },
       {
         label: 'Docs',
-        href: '#',
+        href: 'https://gitbook.animeswapdefi.com/animeswapdefi.com/animeswapdefi-projects/waifuswapdefi',
       },
       {
         label: 'Blog',
