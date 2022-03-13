@@ -183,6 +183,23 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.WFTM,
     quoteTokenAdresses: contracts.wftm,
   },
+  {
+    pid: 10,
+    risk: 2,
+    isTokenOnly: true,
+    lpSymbol: 'BOO',
+    lpAddresses: {
+      250: '0xEc7178F4C41f346b2721907F5cF7628E388A7a58',
+      97: '', // FTM-WBTC LP
+    },
+    tokenSymbol: 'BOO',
+    tokenAddresses: {
+      250: '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE',
+      97: '',
+    },
+    quoteTokenSymbol: QuoteToken.WFTM,
+    quoteTokenAdresses: contracts.wftm,
+  },
 ]
 
 export default farms
