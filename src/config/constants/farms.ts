@@ -134,23 +134,6 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 8,
-    risk: 3,
-    isTokenOnly: true,
-    lpSymbol: 'FFF',
-    lpAddresses: {
-      250: '0x549d44C9C76EdE84D4022554552470B83C097AfF',
-      97: '', // FTM-USDC
-    },
-    tokenSymbol: 'FFF',
-    tokenAddresses: {
-      250: '0x63F601bD749314ad1A2DAD9fbd487488FfF70D6C',
-      97: '',
-    },
-    quoteTokenSymbol: QuoteToken.WFTM,
-    quoteTokenAdresses: contracts.wftm,
-  },
-  {
-    pid: 9,
     risk: 1,
     isTokenOnly: true,
     lpSymbol: 'WFTM',
@@ -167,7 +150,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.usdt,
   },
   {
-    pid: 10,
+    pid: 9,
     risk: 2,
     isTokenOnly: true,
     lpSymbol: 'WBTC',
@@ -184,7 +167,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.wftm,
   },
   {
-    pid: 11,
+    pid: 10,
     risk: 2,
     isTokenOnly: true,
     lpSymbol: 'BOO',
