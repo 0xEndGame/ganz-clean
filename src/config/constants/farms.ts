@@ -184,7 +184,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.wftm,
   },
   {
-    pid: 10,
+    pid: 11,
     risk: 2,
     isTokenOnly: true,
     lpSymbol: 'BOO',
