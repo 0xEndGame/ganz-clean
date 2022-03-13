@@ -5,25 +5,9 @@ const farms: FarmConfig[] = [
   {
     pid: 0,
     risk: 5,
-    lpSymbol: 'WAIFU-fUSDT',
-    lpAddresses: {
-      250: '0xE80792d7c9C39fc8456ECE4294E990371756c4dC',
-      97: '',
-    },
-    tokenSymbol: 'WAIFU',
-    tokenAddresses: {
-      250: '0xa99a2A440494299476f4ceB1696433c66c0d7358',
-      97: '',
-    },
-    quoteTokenSymbol: QuoteToken.USDT,
-    quoteTokenAdresses: contracts.usdt,
-  },
-  {
-    pid: 1,
-    risk: 5,
     lpSymbol: 'WAIFU-WFTM',
     lpAddresses: {
-      250: '0x0E7cbfC07858a5501C2b3895F9cA42078433ac63',
+      250: '0x1A07372a4B17040BDeeCD416249C1171974199da',
       97: '',
     },
     tokenSymbol: 'WAIFU',
@@ -35,7 +19,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.wftm,
   },
   {
-    pid: 2,
+    pid: 1,
     risk: 1,
     lpSymbol: 'WFTM-USDC',
     lpAddresses: {
@@ -51,7 +35,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.usdc,
   },
   {
-    pid: 3,
+    pid: 2,
     risk: 3,
     lpSymbol: 'WFTM-DAI',
     lpAddresses: {
@@ -67,7 +51,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.wftm,
   },
   {
-    pid: 4,
+    pid: 3,
     risk: 2,
     lpSymbol: 'BOO-WFTM',
     lpAddresses: {
@@ -83,7 +67,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.wftm,
   },
   {
-    pid: 5,
+    pid: 4,
     risk: 1,
     lpSymbol: 'WETH-WFTM',
     lpAddresses: {
@@ -99,7 +83,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.wftm,
   },
   {
-    pid: 6,
+    pid: 5,
     risk: 4,
     lpSymbol: 'WBTC-WFTM',
     lpAddresses: {
@@ -115,7 +99,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.wftm,
   },
   {
-    pid: 7,
+    pid: 6,
     risk: 5,
     isTokenOnly: true,
     lpSymbol: 'WAIFU',
@@ -132,7 +116,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.usdt,
   },
   {
-    pid: 8,
+    pid: 7,
     risk: 3,
     isTokenOnly: true,
     lpSymbol: 'USDC',
@@ -149,7 +133,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.wftm,
   },
   {
-    pid: 9,
+    pid: 8,
     risk: 3,
     isTokenOnly: true,
     lpSymbol: 'FFF',
@@ -166,7 +150,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.wftm,
   },
   {
-    pid: 10,
+    pid: 9,
     risk: 1,
     isTokenOnly: true,
     lpSymbol: 'WFTM',
@@ -183,7 +167,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.usdt,
   },
   {
-    pid: 11,
+    pid: 10,
     risk: 2,
     isTokenOnly: true,
     lpSymbol: 'WBTC',
