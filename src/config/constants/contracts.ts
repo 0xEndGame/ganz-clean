@@ -4,7 +4,7 @@ export default {
     97: '',
   },
   masterChef: {
-    250: '0xD060bF1564b07679EB8445Fda8F7302D616BEB59',
+    250: '0xB98C533Cc900569bfA790F57060C9E22fe2e7334',
     97: '',
   },
   wbnb: {
