@@ -105,7 +105,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'WAIFU',
     lpAddresses: {
       250: '0xC4045e90f65dD0405aC6CeAb18Eb37C29A1Bb990',
-      97: '', // COAL-USDT LP
+      97: '', // WAIFU-USDT LP
     },
     tokenSymbol: 'WAIFU',
     tokenAddresses: {
