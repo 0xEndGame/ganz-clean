@@ -11,10 +11,13 @@ const StyledNotificationCard = styled(Card)`
 position: absolute;
 top: 10px;
 right: 10px;
-width: 100px;
-height: 100px;
+width: 50px;
+height: 50px;
 border: 1px solid black;
 overflow: hidden;
+box-shadow: 0 0 20px;
+background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+background-repeat: no-repeat;
 `
 
 
