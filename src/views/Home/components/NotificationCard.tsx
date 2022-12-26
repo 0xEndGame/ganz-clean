@@ -15,7 +15,8 @@ width: 50px;
 height: 50px;
 border: 1px solid black;
 overflow: hidden;
-box-shadow: 0 0 20px;
+box-shadow: 0 0 200px;
+background-color: black;
 background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
 background-repeat: no-repeat;
 `
