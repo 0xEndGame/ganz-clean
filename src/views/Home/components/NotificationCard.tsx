@@ -68,7 +68,7 @@ const StyledNotificationCard = styled(Card)`
         <div className={`popup ${isOpen ? 'open' : 'closed'}`}>
         <div className="popup-content">
           <div className="popup-text">Hello, world!</div>
-          <button
+          <button type="button"
             className="close-button"
             onClick={() => setIsOpen(false)}
           >
@@ -77,7 +77,7 @@ const StyledNotificationCard = styled(Card)`
         </div>
       </div>
 
-      <button
+      <button type="button"
         className="trigger-button"
         onClick={() => setIsOpen(true)}
       >
