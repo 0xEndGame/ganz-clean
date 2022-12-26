@@ -52,14 +52,6 @@ const StyledNotificationCard = styled(Card)`
   function TriggerButton() {
     const [isOpen, setIsOpen] = useState(false);
   
-    return (
-      <button
-        className="trigger-button"
-        onClick={() => setIsOpen(true)}
-      >
-        Show Pop-Up
-      </button>
-    );
   }
 
 
@@ -84,6 +76,13 @@ const StyledNotificationCard = styled(Card)`
           </button>
         </div>
       </div>
+
+      <button
+        className="trigger-button"
+        onClick={() => setIsOpen(true)}
+      >
+        Show Pop-Up
+      </button>
       </StyledTotalValueLockedCard>
     )
   }
