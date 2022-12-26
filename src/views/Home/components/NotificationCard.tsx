@@ -8,33 +8,83 @@ import CardValue from './CardValue'
 
 
 const StyledNotificationCard = styled(Card)`
-position: absolute;
-top: 10px;
-right: 10px;
-width: 50px;
-height: 50px;
-border: 1px solid black;
-overflow: hidden;
-backgorund: rgb(39, 38, 44);
-border-radius: 32px;
-box-shadow: rgb(25 19 38 / 10%) 0px 2px 12px -8px, rgb(25 19 38 / 5%) 0px 1px 1px;
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+  }
+  
+  .popup.open {
+    display: block;
+  }
+  
+  .popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+  }
 `
 
+  
+  // React component for the trigger button
+  function TriggerButton() {
+    const [isOpen, setIsOpen] = useState(false);
+  
+    return (
+      <button
+        className="trigger-button"
+        onClick={() => setIsOpen(true)}
+      >
+        Show Pop-Up
+      </button>
+    );
+  }
 
 
 
   const NotificationCard = () => {
+    const [isOpen, setIsOpen] = useState(false);
     const TranslateString = useI18n()
     // const data = useGetStats()
     const totalValue = useTotalValue();
     // const tvl = totalValue.toFixed(2);
   
     return (
-      <StyledNotificationCard>
-        <Heading size="lg" mb="24px">
-          {TranslateString(999, 'TESTTT')}
-        </Heading>
-      </StyledNotificationCard>
+        <StyledTotalValueLockedCard>
+        <div className={`popup ${isOpen ? 'open' : 'closed'}`}>
+        <div className="popup-content">
+          <div className="popup-text">Hello, world!</div>
+          <button
+            className="close-button"
+            onClick={() => setIsOpen(false)}
+          >
+            X
+          </button>
+        </div>
+      </div>
+      </StyledTotalValueLockedCard>
     )
   }
   
