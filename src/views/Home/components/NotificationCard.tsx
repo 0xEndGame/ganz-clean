@@ -64,7 +64,7 @@ const StyledNotificationCard = styled(Card)`
     // const tvl = totalValue.toFixed(2);
   
     return (
-        <StyledTotalValueLockedCard>
+        <StyledNotificationCard>
         <div className={`popup ${isOpen ? 'open' : 'closed'}`}>
         <div className="popup-content">
           <div className="popup-text">Hello, world!</div>
@@ -83,7 +83,7 @@ const StyledNotificationCard = styled(Card)`
       >
         Show Pop-Up
       </button>
-      </StyledTotalValueLockedCard>
+      </StyledNotificationCard>
     )
   }
   
