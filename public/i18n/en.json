@@ -75,7 +75,7 @@
     {
       "data": {
         "stringId": 304,
-        "text": "Total WAIFU burned since launch"
+        "text": "Total BANHMI burned since launch"
       }
     },
     {
@@ -123,13 +123,13 @@
     {
       "data": {
         "stringId": 320,
-        "text": "Stake LP tokens to earn WAIFU"
+        "text": "Stake LP tokens to earn BANHMI"
       }
     },
     {
       "data": {
         "stringId": 322,
-        "text": "Stake WAIFU, get SYRUP."
+        "text": "Stake BANHMI, get SYRUP."
       }
     },
     {
@@ -153,7 +153,7 @@
     {
       "data": {
         "stringId": 334,
-        "text": "Every time you stake and unstake WAIFU tokens, the contract will automatically harvest WAIFU rewards for you!"
+        "text": "Every time you stake and unstake BANHMI tokens, the contract will automatically harvest BANHMI rewards for you!"
       }
     },
     {
@@ -243,7 +243,7 @@
     {
       "data": {
         "stringId": 380,
-        "text": "1 WAIFU = 1 SYRUP"
+        "text": "1 BANHMI = 1 SYRUP"
       }
     },
     {
