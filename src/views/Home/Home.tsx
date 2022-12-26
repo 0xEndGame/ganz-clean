@@ -8,10 +8,11 @@ import LotteryCard from './components/LotteryCard'
 import CakeStats from './components/CakeStats'
 import TotalValueLockedCard from './components/TotalValueLockedCard'
 import TwitterCard from './components/TwitterCard'
+import NotificationCard from './components/NotificationCard'
 
 const Hero = styled.div`
   align-items: center;
-  background-image: url('/images/egg/3b.png');
+  background-image: url('/images/egg/3b.gif');
   background-repeat: no-repeat;
   background-position: top center;
   display: flex;
@@ -23,7 +24,7 @@ const Hero = styled.div`
   text-align: center;
 
   ${({ theme }) => theme.mediaQueries.lg} {
-    background-image: url('/images/egg/3b.png');
+    background-image: url('/images/egg/3b.gif');
     background-position: center;
     height: 144px;
     max-width: auto;
@@ -70,6 +71,7 @@ const Home: React.FC = () => {
           <FarmStakingCard />
           <CakeStats />
           <TotalValueLockedCard />
+          <NotificationCard />
         </Cards>
       </div>
     </Page>
