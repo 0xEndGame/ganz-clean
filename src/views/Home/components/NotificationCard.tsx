@@ -11,8 +11,8 @@ const StyledNotificationCard = styled(Card)`
 position: absolute;
 top: 10px;
 right: 10px;
-width: 300px;
-height: 200px;
+width: 100px;
+height: 100px;
 border: 1px solid black;
 overflow: hidden;
 `
@@ -28,9 +28,9 @@ overflow: hidden;
   
     return (
       <StyledNotificationCard>
-             <div className="box">
-             <div>Hello, world!</div>
-            </div>
+        <Heading size="lg" mb="24px">
+          {TranslateString(999, 'TESTTT')}
+        </Heading>
       </StyledNotificationCard>
     )
   }
