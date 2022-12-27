@@ -33,7 +33,7 @@ function NotificationBox() {
   return (
     <div className={`notification-box ${isOpen ? 'open' : 'closed'}`}>
       <div className="notification-text">Hello, world!</div>
-      <button
+      <button type="button"
         className="close-button"
         onClick={() => setIsOpen(false)}
       >
