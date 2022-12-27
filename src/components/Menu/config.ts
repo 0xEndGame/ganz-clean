@@ -28,7 +28,7 @@ const config: MenuEntry[] = [
   {
     label: 'Pools',
     icon: 'PoolIcon',
-    href: '/nests',
+    href: '/pool',
   },
   // {
   //   label: 'Pools',
@@ -46,15 +46,11 @@ const config: MenuEntry[] = [
   //   href: '/nft',
   // },
   {
-    label: 'Play 2 Earn & AirDrop',
+    label: 'AirDrop & Presale',
     icon: 'InfoIcon',
     items: [
       {
         label: 'PreSale',
-        href: 'https://dx.app/app/v3/defipresale?saleID=23&chain=Fantom',
-      },
-      {
-        label: 'Play 2 Earn coming soon',
         href: '#',
       },
       {
@@ -64,7 +60,7 @@ const config: MenuEntry[] = [
     ],
   },
   {
-    label: 'More & Charts',
+    label: 'Price Charts & Docs',
     icon: 'MoreIcon',
     items: [
       {
@@ -73,10 +69,6 @@ const config: MenuEntry[] = [
       },
       {
         label: 'Docs',
-        href: '',
-      },
-      {
-        label: 'Blog',
         href: '#',
       },
     ],
