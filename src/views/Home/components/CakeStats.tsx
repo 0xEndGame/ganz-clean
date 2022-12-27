@@ -63,6 +63,7 @@ const CakeStats = () => {
           <Text fontSize="14px">{TranslateString(540, 'New BANHMI/block')}</Text>
           <Text bold fontSize="14px">{eggPerBlock}</Text>
         </Row>
+        <img src="/images/egg/3b.gif" alt="My image"></img>
       </CardBody>
     </StyledCakeStats>
   )
