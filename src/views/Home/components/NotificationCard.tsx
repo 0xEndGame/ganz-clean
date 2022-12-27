@@ -1,50 +1,43 @@
-import * as React from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import { Card, CardBody, Heading, Skeleton, Text } from '@pancakeswap-libs/uikit'
 import useI18n from 'hooks/useI18n'
 import { useGetStats } from 'hooks/api'
 import { useTotalValue } from '../../../state/hooks'
 import CardValue from './CardValue'
+import { a } from 'react-router-dom';
 
-
-const StyledNotificationCard = styled(Card)`
-.notification-box {
-  position: relative;
-  bottom: 20px;
-  right: 20px;
-  width: 300px;
-  height: 50px;
-  background-color: white;
-  border: 1px solid black;
-  padding: 10px;
-  top: 0; 
-  right: 0; 
-}
-
-.notification-text {
-  float: left;
-  width: calc(100% - 50px);
-  height: 100%;
+const StyledTotalValueLockedCard = styled(Card)`
+  align-items: center;
+  display: flex;
+  flex: 1;
 `
 
-
-
-function NotificationCard() {
-  const [isOpen, setIsOpen] = React.useState(true);
+const TotalValueLockedCard = () => {
+  const TranslateString = useI18n()
+  // const data = useGetStats()
+  const totalValue = useTotalValue();
+  // const tvl = totalValue.toFixed(2);
 
   return (
-    <StyledNotificationCard>
-    <div className={`notification-box ${isOpen ? 'open' : 'closed'}`}>
-      <div className="notification-text">Hello, world!</div>
-      <button type="button"
-        className="close-button"
-        onClick={() => setIsOpen(false)}
-      >
-        X
-      </button>
-    </div>
-    </StyledNotificationCard>
-  );
+    <StyledTotalValueLockedCard>
+      <CardBody>
+        <Heading size="lg" mb="24px">
+          {TranslateString(999, 'Telegram & Discord')}
+        </Heading>
+        <>
+          {/* <Heading size="xl">{`$${tvl}`}</Heading> */}
+          {/* <Heading size="xl"> */}
+            <CardValue value={totalValue.toNumber()} prefix="$" decimals={2}/>
+          {/* </Heading> */}
+          <Text color="textSubtle">{TranslateString(999, 'Join our Community!)}</Text>
+          <a href="https://example.com" target="_blank" rel="noopener noreferrer">
+          Visit example.com
+        </a>
+        </>
+      </CardBody>
+    </StyledTotalValueLockedCard>
+  )
 }
-  
-  export default NotificationCard
+
+export default TotalValueLockedCard
