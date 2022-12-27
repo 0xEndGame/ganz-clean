@@ -13,11 +13,12 @@ const Hero = styled.div`
   align-items: center;
   background-image: url('/images/egg/3b.gif');
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: right center;
   display: flex;
   justify-content: center;
   flex-direction: column;
   margin: auto;
+  right: 0;
   margin-bottom: 32px;
   padding-top: 116px;
   text-align: center;
