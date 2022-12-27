@@ -1,4 +1,4 @@
-import { React, useState } from 'react'
+import * as React from 'react'
 import styled from 'styled-components'
 import { Card, CardBody, Heading, Skeleton, Text } from '@pancakeswap-libs/uikit'
 import useI18n from 'hooks/useI18n'
@@ -28,7 +28,7 @@ const StyledNotificationCard = styled(Card)`
 
 
 function NotificationBox() {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = react.useState(true);
 
   return (
     <div className={`notification-box ${isOpen ? 'open' : 'closed'}`}>
