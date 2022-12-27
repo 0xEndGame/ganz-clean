@@ -43,6 +43,7 @@ const TwitterCard = () => {
             width: "400"
           }}
         />
+        <Text color="textSubtle">{TranslateString(999, 't.me/defi')}</Text>
       </CardBody>
     </StyledTwitterCard>
   )
