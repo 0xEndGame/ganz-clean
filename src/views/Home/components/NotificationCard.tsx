@@ -7,20 +7,20 @@ import { useTotalValue } from '../../../state/hooks'
 import CardValue from './CardValue'
 import { a } from 'react-router-dom';
 
-const StyledTotalValueLockedCard = styled(Card)`
+const StyledNotificationCard = styled(Card)`
   align-items: center;
   display: flex;
   flex: 1;
 `
 
-const TotalValueLockedCard = () => {
+const NotificationCard = () => {
   const TranslateString = useI18n()
   // const data = useGetStats()
   const totalValue = useTotalValue();
   // const tvl = totalValue.toFixed(2);
 
   return (
-    <StyledTotalValueLockedCard>
+    <StyledNotificationCard>
       <CardBody>
         <Heading size="lg" mb="24px">
           {TranslateString(999, 'Telegram & Discord')}
@@ -36,8 +36,8 @@ const TotalValueLockedCard = () => {
         </a>
         </>
       </CardBody>
-    </StyledTotalValueLockedCard>
+    </StyledNotificationCard>
   )
 }
 
-export default TotalValueLockedCard
+export default NotificationCard
