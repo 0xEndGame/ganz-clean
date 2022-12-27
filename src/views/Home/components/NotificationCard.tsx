@@ -28,7 +28,7 @@ const StyledNotificationCard = styled(Card)`
 
 
 function NotificationBox() {
-  const [isOpen, setIsOpen] = react.useState(true);
+  const [isOpen, setIsOpen] = React.useState(true);
 
   return (
     <div className={`notification-box ${isOpen ? 'open' : 'closed'}`}>
