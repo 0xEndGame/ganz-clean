@@ -8,7 +8,6 @@ import LotteryCard from './components/LotteryCard'
 import CakeStats from './components/CakeStats'
 import TotalValueLockedCard from './components/TotalValueLockedCard'
 import TwitterCard from './components/TwitterCard'
-import NotificationCard from './components/NotificationCard'
 
 const Hero = styled.div`
   align-items: center;
