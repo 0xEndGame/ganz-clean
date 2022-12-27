@@ -9,7 +9,7 @@ import CardValue from './CardValue'
 
 const StyledNotificationCard = styled(Card)`
 .notification-box {
-  position: fixed;
+  position: relative;
   bottom: 20px;
   right: 20px;
   width: 300px;
@@ -17,6 +17,8 @@ const StyledNotificationCard = styled(Card)`
   background-color: white;
   border: 1px solid black;
   padding: 10px;
+  top: 0; 
+  right: 0; 
 }
 
 .notification-text {
