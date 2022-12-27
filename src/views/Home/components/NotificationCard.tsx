@@ -31,6 +31,7 @@ function NotificationCard() {
   const [isOpen, setIsOpen] = React.useState(true);
 
   return (
+    <StyledNotificationCard>
     <div className={`notification-box ${isOpen ? 'open' : 'closed'}`}>
       <div className="notification-text">Hello, world!</div>
       <button type="button"
@@ -40,6 +41,7 @@ function NotificationCard() {
         X
       </button>
     </div>
+    </StyledNotificationCard>
   );
 }
   
