@@ -35,7 +35,7 @@ const TwitterCard = () => {
         <Timeline
           dataSource={{
             sourceType: 'profile',
-            screenName: ''
+            screenName: 'https://twitter.com/WagmiFlip'
           }}
           options={{
             height: '300',
@@ -43,7 +43,7 @@ const TwitterCard = () => {
             width: "400"
           }}
         />
-        <Text color="textSubtle">{TranslateString(999, 't.me/defi')}</Text>
+        <Text color="textSubtle">{TranslateString(999, 'https://t.me/banhmiswap')}</Text>
       </CardBody>
     </StyledTwitterCard>
   )
