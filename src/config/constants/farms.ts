@@ -37,18 +37,18 @@ const farms: FarmConfig[] = [
   {
     pid: 2,
     risk: 3,
-    lpSymbol: 'WFTM-DAI',
+    lpSymbol: 'MUMMY-USDC',
     lpAddresses: {
-      250: '0xe120ffBDA0d14f3Bb6d6053E90E63c572A66a428',
+      250: '0x2A6538a456650Cd454Dcd8f0B4665183DBa0bb27',
       97: '',
     },
-    tokenSymbol: 'DAI',
+    tokenSymbol: 'MUMMY',
     tokenAddresses: {
-      250: '0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E',
+      250: '0x01e77288b38b416F972428d562454fb329350bAc',
       97: '',
     },
-    quoteTokenSymbol: QuoteToken.WFTM,
-    quoteTokenAdresses: contracts.wftm,
+    quoteTokenSymbol: QuoteToken.USDC,
+    quoteTokenAdresses: contracts.usdc,
   },
   {
     pid: 3,
