@@ -7,12 +7,12 @@ const farms: FarmConfig[] = [
     risk: 5,
     lpSymbol: 'BANHMI-WFTM',
     lpAddresses: {
-      250: '0x1A07372a4B17040BDeeCD416249C1171974199da',
+      250: '0x0Ec6fb63D6Aa42BD3AaF12E27bb91ef15F01F574',
       97: '',
     },
     tokenSymbol: 'BANHMI',
     tokenAddresses: {
-      250: '0xa99a2A440494299476f4ceB1696433c66c0d7358',
+      250: '0x820D15082aaB4fcD19C7acD72d5ec1A63153c332',
       97: '',
     },
     quoteTokenSymbol: QuoteToken.WFTM,
