@@ -30,7 +30,7 @@ const TwitterCard = () => {
     <StyledTwitterCard>
       <CardBody>
         <Heading size="xl" mb="24px">
-          {TranslateString(10003, 'Announcements')}
+          {TranslateString(10003, 'Announcement')}
         </Heading>
         <Timeline
           dataSource={{
