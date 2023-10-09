@@ -43,7 +43,7 @@ const TwitterCard = () => {
             width: "400"
           }}
         />
-        <Text color="textSubtle">{TranslateString(999, 'https://t.me/banhmiswap')}</Text>
+        <Text color="textSubtle">{TranslateString(999, '#')}</Text>
       </CardBody>
     </StyledTwitterCard>
   )
