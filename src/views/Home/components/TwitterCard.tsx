@@ -38,7 +38,7 @@ const TwitterCard = () => {
             screenName: '#'
           }}
           options={{
-            height: '300',
+            height: '200',
             chrome: "noheader, nofooter",
             width: "400"
           }}
